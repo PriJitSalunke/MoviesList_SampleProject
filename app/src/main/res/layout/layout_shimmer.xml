@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+android:background="@color/Grey"
+android:layout_height="wrap_content">
+
+
+
+<LinearLayout
+    android:id="@+id/ll_baby_list"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="@color/white"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints">
+
+    <View
+        android:layout_width="30dp"
+        android:layout_height="10dp"
+        android:background="@color/background"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/background"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="1"
+        />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@color/background"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="2"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
+

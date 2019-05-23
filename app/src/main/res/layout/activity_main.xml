@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:shimmer="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            shimmer:duration="800">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <!-- Adding 7 rows of placeholders -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+                    <include layout="@layout/layout_shimmer" />
+
+                </LinearLayout>
+            </ScrollView>
+
+
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/black_box"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_sort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/black_box"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="5dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/sort_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Sort By"
+                    android:gravity="center"
+                    android:layout_margin="2dp"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white" />
+            <LinearLayout
+                android:id="@+id/ll_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/black_box"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="5dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/filter_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Rating"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ll_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="5dp"
+                android:background="@drawable/black_box"
+                android:orientation="horizontal">
+                <ImageView
+                    android:layout_width="22dp"
+                    android:layout_height="22dp"
+                    android:padding="5dp"
+                    android:layout_margin="2dp"
+                    android:src="@drawable/plus_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Date"
+                    android:layout_margin="2dp"
+                    android:gravity="center"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
