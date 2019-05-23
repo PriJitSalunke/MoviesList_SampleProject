@@ -7,7 +7,6 @@ import android.arch.persistence.room.Query;
 
 import com.example.Entity.Movie_Table;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Dao
